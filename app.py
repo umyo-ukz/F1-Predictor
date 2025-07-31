@@ -3,8 +3,7 @@ import pandas as pd # Library for data manipulation
 import joblib # Library for loading the trained model
 
 # Load model
-model = joblib.load("C:/Users/Administrator/Documents/VSC Projects/F1 Predictor/model/f1_model.pkl")
-
+model = joblib.load("model/f1_model.pkl")
 # Sample driver and constructor mappings
 drivers = {
     "Max Verstappen": 1,
