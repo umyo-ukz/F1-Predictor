@@ -2,7 +2,7 @@
 import pandas as pd
 
 def load_data():
-    df = pd.read_csv("C:/Users/Administrator/Documents/VSC Projects/F1 Predictor/data/results.csv")
+    df = pd.read_csv("data/results.csv")
     df = df[['raceId', 'driverId', 'constructorId', 'grid', 'positionOrder', 'points']]
     df = df.dropna()
     return df
@@ -28,7 +28,7 @@ def train_model():
     acc = accuracy_score(y_test, model.predict(X_test))
     print(f"Accuracy: {acc:.2f}")
 
-    joblib.dump(model, 'C:/Users/Administrator/Documents/VSC Projects/F1 Predictor/model/f1_model.pkl')
+    joblib.dump(model, 'model/f1_model.pkl')
 
 if __name__ == "__main__":
     train_model()
