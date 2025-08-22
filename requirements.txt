@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 pandas
 numpy
 scikit-learn
 joblib
 streamlit
 fastf1
+=======
+pandas
+numpy
+scikit-learn
+joblib
+streamlit
+fastf1
+>>>>>>> 87e274483b198d2794889eecde40428787728c67
